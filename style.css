@@ -1,0 +1,76 @@
+@font-face {
+    font-family: sevenSegments;
+    src: url(fonts/Seven_Segment.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+    .calculator {
+        display: flex;
+        flex: 0 0 0;
+        flex-direction: column;
+        width: 400px;
+        border: 16px solid cornflowerblue;
+        border-radius: 20px;
+        background-color: cornflowerblue;
+    }
+
+        .display {
+            display: flex;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 304px;
+            background-color: aliceblue;
+        }
+
+            .display > div {
+                display: flex;
+                justify-content: flex-end;
+                font-family: sevenSegments;
+                font-size: 48px;
+                width: 284px;
+            }
+
+        .clear-delete {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            padding: 8px 0 8px 0;
+        }
+
+            .clear-delete > button {
+                font-family: roboto;
+                font-size: 32px;
+                font-weight: 350;
+                height: 50px;
+                width: 148px;
+            }
+
+        .numpad {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            gap: 8px;
+            margin: 0;
+            padding: 0;
+        }
+
+            .numpad > button {
+                font-family: roboto;
+                font-size: 32px;
+                font-weight: 300;
+                height: 70px;
+                width: 70px;
+            }
