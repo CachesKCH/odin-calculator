@@ -38,6 +38,8 @@ body {
             .display > div {
                 display: flex;
                 justify-content: flex-end;
+                flex-wrap: nowrap;
+                overflow: hidden;
                 font-family: sevenSegments;
                 font-size: 48px;
                 width: 284px;
